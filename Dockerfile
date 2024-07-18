@@ -4,6 +4,9 @@ WORKDIR /usr/src/app
 
 COPY Package*.json ./
 
+# Debugging step: list the files
+RUN ls -l /usr/src/app
+
 RUN npm install
 
 COPY . .
